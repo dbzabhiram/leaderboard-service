@@ -4,7 +4,7 @@ A high-performance, concurrent leaderboard system built using Spring Boot and JP
 
 <h2>Features</h2>
 
-- Create and manage leaderboards per game
+- Create and manage leaderboards for multiple games
 - Submit scores with atomic update-if-higher semantics
 - Supports high concurrency safely using database-level updates
 - Fetch:
