@@ -94,6 +94,3 @@ GET /api/leaderboard/{id}/player/{playerId}/next?nPlayers={}
 ```
 GET /api/leaderboard/{id}/player/{playerId}/prev?nPlayers={}
 ```
-
-
-<a url = "https://lunar-astronaut-187280.postman.co/workspace/Spring-Cloud-Microservices-Udem~bc45fb70-ad98-4bd0-a959-dd6338992ac5/collection/14308364-6a736bad-b9bf-4251-b92f-c452972d39be?action=share&creator=14308364">Postman Collection Link</a>
