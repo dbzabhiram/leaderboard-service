@@ -34,7 +34,7 @@ public class LeaderboardApi {
         return ResponseEntity.ok(leaderboardService.getLeaderboard(id));
     }
 
-    @PutMapping("/game/{gameId}/player/{playerId}")
+    @PutMapping("/game/{gameId}/player/{playerId}/submit")
     public ResponseEntity<ScoreSubmissionResponse> submitScore(@PathVariable String gameId,
                                                                @PathVariable String playerId,
                                                                @RequestParam int score) {
