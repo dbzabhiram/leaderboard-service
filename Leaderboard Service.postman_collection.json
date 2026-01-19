@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "6a736bad-b9bf-4251-b92f-c452972d39be",
+		"name": "Leaderboard Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14308364",
+		"_collection_link": "https://lunar-astronaut-187280.postman.co/workspace/Spring-Cloud-Microservices-Udem~bc45fb70-ad98-4bd0-a959-dd6338992ac5/collection/14308364-6a736bad-b9bf-4251-b92f-c452972d39be?action=share&source=collection_link&creator=14308364"
+	},
+	"item": [
+		{
+			"name": "Create Leaderboard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 1768759800000,\n    \"endTime\": 1768867200000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Leaderboard By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/{{leaderboardId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"{{leaderboardId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Score 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/game/123/player/abhi/submit?score=80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"game",
+						"123",
+						"player",
+						"abhi",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "score",
+							"value": "80"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Score 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/game/123/player/coco/submit?score=90",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"game",
+						"123",
+						"player",
+						"coco",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "score",
+							"value": "90"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Score 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/game/123/player/pihu/submit?score=85",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"game",
+						"123",
+						"player",
+						"pihu",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "score",
+							"value": "85"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Score 4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/game/123/player/kunal/submit?score=71",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"game",
+						"123",
+						"player",
+						"kunal",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "score",
+							"value": "71"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Score 5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/game/123/player/mahim/submit?score=75",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"game",
+						"123",
+						"player",
+						"mahim",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "score",
+							"value": "75"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top N Players",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/{{leaderboardId}}/top?nPlayers=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"{{leaderboardId}}",
+						"top"
+					],
+					"query": [
+						{
+							"key": "nPlayers",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Next N Players",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/{{leaderboardId}}/player/pihu/next?nPlayers=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"{{leaderboardId}}",
+						"player",
+						"pihu",
+						"next"
+					],
+					"query": [
+						{
+							"key": "nPlayers",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prev N Players",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"gameId\": \"123\",\n    \"startTime\": 122,\n    \"endTime\": 125\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/leaderboard/{{leaderboardId}}/player/mahim/prev?nPlayers=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"leaderboard",
+						"{{leaderboardId}}",
+						"player",
+						"mahim",
+						"prev"
+					],
+					"query": [
+						{
+							"key": "nPlayers",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "leaderboardId",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
