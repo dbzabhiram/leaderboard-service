@@ -17,14 +17,15 @@ A high-performance, concurrent leaderboard system built using Spring Boot and JP
 
 <h2>Tech Stack</h2>
 - Java 17+
-- Spring Boot 3.x
-- Spring Data JPA
-- H2 Database
-- Lombok
+- Spring Boot 3.x 
+- Spring Data JPA 
+- H2 Database 
+- Lombok 
 - JUnit 5, Mockito
 
 
 <h2>Project Structure</h2>
+
 ```
 leaderboard-service/
 ├── controller/
