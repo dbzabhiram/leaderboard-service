@@ -29,12 +29,17 @@ A high-performance, concurrent leaderboard system built using Spring Boot and JP
 
 ```
 leaderboard-service/
-├── controller/
-├── service/
-├── repository/
-├── model/
-├── dto/
-└── test/
+├── src/
+     ├── main/
+          ├── java/
+                ├── constants/
+                ├── controller/
+                ├── data/
+                ├── repository/
+                ├── service/
+                ├── util/
+                ├── ServiceApplication
+    └── test/
 ```
 
 <h2>Setup & Run</h2>
