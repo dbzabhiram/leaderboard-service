@@ -16,6 +16,7 @@ A high-performance, concurrent leaderboard system built using Spring Boot and JP
 - Fully unit-tested with concurrency and pagination scenarios
 
 <h2>Tech Stack</h2>
+
 - Java 17+
 - Spring Boot 3.x 
 - Spring Data JPA 
@@ -39,6 +40,7 @@ leaderboard-service/
 <h2>Setup & Run</h2>
 
 <h3>Clone the repo</h3>
+
 ```
 git clone https://github.com/dbzabhiram/leaderboard-service.git
 cd leaderboard-service
@@ -46,12 +48,14 @@ cd leaderboard-service
 
 
 <h3>Run the app</h3>
+
 ```
 ./gradlew bootRun
 ```
 
 
 <h3>Access H2 Console</h3>
+
 ```
 URL: http://localhost:8080/h2-console
 JDBC URL: jdbc:h2:mem:testdb
